@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sistema de Notas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="sistema-notas">
+        <h1>Sistema de Notas</h1>
+        <form id="form">
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" id="nome" required>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" step="0.1" max="10" required>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" step="0.1" max="10" required>
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" step="0.1" max="10" required>
+            <button type="submit">CADASTRAR</button>
+        </form>
+        
+      </div>
+      <div id="cadastro-alunos">
+        <div id="alunos">
+          <h2 id="alunos">Alunos Cadastrados</h2>
+       <table>
+         <thead>
+           <tr>
+             <th style="color: #2980b9">Nome do estudante</th>
+             <th style="color: rgba(0, 153, 255, 0.822);">Nota 1</th>
+             <th style="color: rgba(0, 153, 255, 0.822);">Nota 2</th>
+             <th style="color: rgba(0, 153, 255, 0.822);">Nota 3</th>
+             <th style="color: rgb(0 237 84);">Média</th>
+             <th style="color: rgb(215 186 89)">Resultado</th>
+           </tr>
+         </thead>
+         <tbody id="lista-alunos">
+         </tbody>
+       </table>
+       </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
